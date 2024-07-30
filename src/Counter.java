@@ -5,11 +5,11 @@ public class Counter {
     count++;
   }
 
-  public void decrement() {
+  public synchronized void decrement() {
     count--;
   }
 
-  public int value() {
+  public synchronized int value() {
     return count;
   }
     
